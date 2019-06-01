@@ -1,0 +1,153 @@
+* {
+    color: #263646;
+    font-family: 'Rubik';
+    font-size: 14px;
+}
+body {
+    background: #fdfdfd;
+}
+div.box_palettes {
+    display: inline-block;
+    width: 230px;
+    height: 280px;
+    margin: 7px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px -10px rgba(0,64,128,0.2);
+}
+div.palettes {
+    width: 100%;
+    height: 245px;
+}
+div.palette {
+    position: relative;
+    width: 100%;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+div.palette:hover div span {
+    visibility: visible;
+}
+div.p1 {
+    height: 35%;
+    background: #ddd;
+    border-radius: 5px 5px 0px 0px;
+}
+div.p2 {
+    height: 27%;
+    background: #aaa;
+}
+div.p3 {
+    height: 17%;
+    background: #666;
+}
+div.p4 {
+    height: 15%;
+    background: #000;
+    border-radius: 0px 0px 5px 5px;
+}
+div.palettes div div {
+    position: absolute;
+    bottom: 0px;
+}
+div.palettes div div span {
+    visibility: hidden;
+    position: relative;
+    bottom: 0px;
+    padding: 3px 6px;
+    border-radius: 0px 3px 0px 0px;
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+div.palettes div div span:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+div.desc_palettes {
+    height: 35px;
+    line-height: 35px;
+}
+div.desc_palettes button {
+    height: 36px;
+    padding: 0px 12px;
+    border: 1px solid #e9f2f9;
+    border-radius: 3px;
+    background: white;
+}
+.like {
+	height: 36px;
+    padding: 0px 12px;
+    border: 1px solid #e9f2f9;
+    border-radius: 3px;
+    background: white;
+}
+.liked {
+	border: 1px solid #e9f2f9;
+	background: #f5fcff;
+}
+div.desc_palettes span.time {
+    float: right;
+    color: #899bb4;
+    font-size: 12px;
+}
+div.box_palette_detail {
+    width: 96%;
+    height: 730px;
+    background: white;
+    margin: 0px 7px 7px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px -10px rgba(0,64,128,0.2);
+}
+div.palette_detail {
+    width: 100%;
+    height: 715px;
+}
+button.palette_detail {
+    margin-right: 5px;
+}
+.detail_button {
+    color: #899bb4;
+}
+.detail_button:hover {
+    color: #263646;
+}
+.none {
+    text-decoration: none;
+    margin-left: 5px;
+}
